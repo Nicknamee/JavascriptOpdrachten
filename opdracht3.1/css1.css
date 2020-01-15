@@ -5,15 +5,15 @@ body {
 }
 
 img {
-    height: 450px;
-    width: 450px;
+    height: 300px;
+    width: 300px;
     border: 0;
 }
 
 #pics {
-    width: 1350px;
-    height: 1350px;
-    border: solid 1px black;
-    font-size: 0px;
+    width: 900px;
+    height: 900px;
+    border: solid 2px black;
+    font-size: 0;
     margin: auto;
 }
