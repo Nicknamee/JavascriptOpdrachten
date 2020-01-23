@@ -1,6 +1,6 @@
 pics = document.getElementById("pics");
 createPicsHolders();
-createAapImages();
+createChibaImages();
 
 function createPicsHolders(){
     for (var i = 0; i < 9; i++) {
@@ -13,29 +13,29 @@ function createPicsHolders(){
 
 }
 
-function createAapImages() {
+function createChibaImages() {
     pictureHolders = document.getElementsByClassName("picture-holder");
     for (var i = 0; i < pictureHolders.length; i++) {
         favoriet = document.createElement("div");
         favoriet.className = "favoriet";
         favoriet.id = "favoriet_" +(i+1);
-        aapPlaatje = document.createElement("img");
-        aapPlaatje.src = "img/pic" + (i+1) + ".jpg";
-        aapPlaatje.id = (i+1);
-        aapPlaatje.addEventListener("click", function () {
+        chibaPlaatje = document.createElement("img");
+        chibaPlaatje.src = "img/pic" + (i+1) + ".jpg";
+        chibaPlaatje.id = (i+1);
+        chibaPlaatje.addEventListener("click", function () {
             maakFavoriet(this.id);
 
         });
         pictureHolders[i].appendChild(favoriet);
-        pictureHolders[i].appendChild(aapPlaatje);
+        pictureHolders[i].appendChild(chibaPlaatje);
     }
 }
 
 function maakFavoriet(id) {
-    notsofavoriet = document.getElementsByClassName("favoriet");
+    notfav = document.getElementsByClassName("favoriet");
 
-    for(var i = 0; i < notsofavoriet.length; i++){
-        notsofavoriet [i].style.backgroundImage = "none";
+    for(var i = 0; i < notfav.length; i++){
+        notfav [i].style.backgroundImage = "none";
     }
     favoriet = document.getElementById("favoriet_" + id);
     favoriet.style.backgroundImage = "url('img/hartje.png')";
