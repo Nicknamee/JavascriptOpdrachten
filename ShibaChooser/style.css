@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+div.picture-holder {
+    height: 377px;
+    width: 225px;
+    float: left;
+    background-color: lightpink;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+div.favoriet {
+    width:225px;
+    height: 150px;
+    background-image: none;
+    background-color: lightpink;
+    background-position: 65px 25px;
+}
+
+#pics {
+    width: 675px;
+    border: solid 1px black;
+    font-size: 0;
+    margin: auto;
+
+}
